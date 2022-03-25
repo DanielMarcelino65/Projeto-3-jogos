@@ -18,7 +18,7 @@ int main()
     printf("          --Selecione um jogo de sua escolha de sua escolha--\n\n");
     
     printf("_______________________________Digite__________________________________\n\n");
-    printf (" |1| para --> PERGUNTAS E RESPOSTAS \n\n |2| para--> ADVINHE O NUMERO\n\n |3| para --> OLHO DE COBRA\n\n");
+    printf (" |1| para --> PERGUNTAS E RESPOSTAS \n\n |2| para--> ADVINHE O NUMERO\n\n |3| para --> OLHO DE COBRA\n\n |4| para --> SAIR DO MENU\n\n");
     printf(" --> ");
     
     scanf("%d",&j);
@@ -487,7 +487,9 @@ int main()
     } while (retorno != 1);
     break;
     
-    
+    case 4:
+    	return 0;
+    	break;
 }
 
 
