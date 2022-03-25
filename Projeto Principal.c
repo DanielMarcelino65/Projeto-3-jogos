@@ -35,7 +35,7 @@ int main()
     
  	
 	
-    int r1;
+    	int r1;
 	int r2;
 	int r3;
 	//***************Iniciando jogo numero 1*************
