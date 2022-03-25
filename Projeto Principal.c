@@ -35,7 +35,7 @@ int main()
     
  	
 	
-    	int r1;
+    int r1;
 	int r2;
 	int r3;
 	//***************Iniciando jogo numero 1*************
@@ -226,6 +226,7 @@ int main()
 	int i = 0, j= 0, x = 0, y =0;
 	int FimDeJogo = 0;
 	int ponto1 = 0, ponto2 = 0;
+	int ok;
 	do
 	{
 	ponto1 = 0; ponto2 = 0;
@@ -309,8 +310,11 @@ int main()
 		{
 			printf("                                    -OBS-                                             \n\n");
 	    printf("\n          ==>Um dos dados caiu no numero 1, portanto sua pontuacao ira");
-		printf("\n              zerar e voce perdera a vez. Obrigado por jogar.");
+		printf("\n              zerar e voce perdera a vez. Obrigado por jogar.\n");
+		printf("\n                        Digite 1 para continuar: ");
+		scanf("%d", &ok);
 	    printf("\n\n___________________________________________________________________________________\n\n");
+	    
 		ponto1 = 0;
 		i = 2;
 		dado1 = 0; dado2 = 0;
@@ -422,10 +426,12 @@ int main()
 	{
 		if(dado1 == 1 || dado2 == 1)
 		{
-		printf("\n\n\n\n\n\n\n\n\n\n\n\n___________________________________________________________________________________\n\n");
-		printf("                                 PONTUACAO ZERADA!\n\n");
-		printf("                          ==>UM DE SEUS DADOS FOI IGUAL A |1|\n");
-		printf("___________________________________________________________________________________\n\n");
+			printf("                                    -OBS-                                             \n\n");
+	    printf("\n          ==>Um dos dados caiu no numero 1, portanto sua pontuacao ira");
+		printf("\n              zerar e voce perdera a vez. Obrigado por jogar.\n");
+		printf("\n                        Digite 1 para continuar: ");
+		scanf("%d", &ok);
+	    printf("\n\n___________________________________________________________________________________\n\n");
 		
 		ponto2 = 0;
 		j = 2;
@@ -488,6 +494,7 @@ int main()
     break;
     
     case 4:
+    	
     	return 0;
     	break;
 }
